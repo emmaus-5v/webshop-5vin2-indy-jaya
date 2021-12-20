@@ -11,7 +11,29 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+DROP TABLE IF EXISTS ratings; 
+CREATE TABLE ratings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  rating VARCHAR(10)
+);
 
+DROP TABLE IF EXISTS reviews; 
+CREATE TABLE reviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  review TEXT
+);
+
+DROP TABLE IF EXISTS kleuren; 
+CREATE TABLE kleuren(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur TEXT
+);
+
+DROP TABLE IF EXISTS kleuren; 
+CREATE TABLE kleuren(
+  schoen_id INTEGER PRIMARY KEY AUTOINCREMENT,
+  kleur_id INTEGER
+);
 --
 -- populate with data
 --
