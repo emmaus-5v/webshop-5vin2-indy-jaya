@@ -52,3 +52,20 @@ insert into products (name, description, code, price) values ('Timberlands', 'Ti
 insert into products (name, description, code, price) values ('Vans', 'Vans staan bekend als skate schoenen maar je kan ze ook makkelijk voor dagelijk gebruik gebruiken.', '392672673-2', 100.00);
 insert into products (name, description, code, price) values ('Tommy Hilfiger', 'Tommy Hilfiger staat bekend om hun kleding maar ze verkopen ook goede en mooie schoenen', '970352673-6', 200.00);
 
+insert into ratings (rating) values ('4,0');
+insert into ratings (rating) values ('4,2');
+insert into ratings (rating) values ('4,9');
+insert into ratings (rating) values ('4,7');
+insert into ratings (rating) values ('4,1');
+insert into ratings (rating) values ('3,5');
+insert into ratings (rating) values ('3,4');
+insert into ratings (rating) values ('4,1');
+
+insert into reviews (review) values ('Helemaal top! De prijs is wel wat duur, maar ik heb ze eerder gehad en ze gingen uiteindelijk 4 jaar mee.');
+insert into reviews (review) values ('Een tijdloze, comfortabele schoen waar je dol op bent voor je voeten.');
+insert into reviews (review) values ('Mooie schoen, zit zeer gemakkelijk');
+insert into reviews (review) values ('Een leuke unieke schoen die je in veel kleuren kan vinden, en gaat lang mee');
+insert into reviews (review) values ('Ze zijn natuurlijk super makkelijk te combineren (ze passen op jurkjes na echt bij alles) maar ook lopen ze enorm fijn.');
+insert into reviews (review) values ('9 maanden geleden lederen Timberland wandelschoenen gekocht waarvan beide zolen volledig doorgesleten zijn.');
+insert into reviews (review) values ('Heb 3 paar tommys gehad in mijn leven gehad en elke keer kwaliteit om van te huilen.');
+insert into reviews (review) values ('Mooi en passen precies. Staat goed bij alle kleding. De schoenen zitten perfect en zijn heel mooi! Sportief en comfortabel.');
