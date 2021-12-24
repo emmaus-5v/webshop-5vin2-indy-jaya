@@ -28,7 +28,7 @@ Tip: je kunt een multipliciteitendiagram gebruiken als tussenstap voor je databa
 - [ ] Voeg eventueel plaatjes toe (web/images map)
 
 Stap 3: API aanpassen 
-- [ ] Pas de API aan, zodat je alle informatie uit je database kunt opvragen via de API
+- [x] Pas de API aan, zodat je alle informatie uit je database kunt opvragen via de API
 
 Stap 4: Website aanpassen 
 - [ ] Pas de website aan, zodat alle informatie getoond wordt.
