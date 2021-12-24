@@ -86,3 +86,20 @@ insert into merk (name) values ('timberlands');
 insert into merk (name) values ('vans');
 insert into merk (name) values ('tommy hilfiger');
 
+insert into kleuren (kleur) values ('Wit');
+insert into kleuren (kleur) values ('Wit');
+insert into kleuren (kleur) values ('Wit');
+insert into kleuren (kleur) values ('Rood');
+insert into kleuren (kleur) values ('Wit');
+insert into kleuren (kleur) values ('Bruin');
+insert into kleuren (kleur) values ('Zwart');
+insert into kleuren (kleur) values ('Zwart');
+
+insert into kleuren (kleur) values ('1');
+insert into kleuren (kleur) values ('1');
+insert into kleuren (kleur) values ('1');
+insert into kleuren (kleur) values ('2');
+insert into kleuren (kleur) values ('1');
+insert into kleuren (kleur) values ('3');
+insert into kleuren (kleur) values ('4');
+insert into kleuren (kleur) values ('4');
