@@ -34,11 +34,13 @@ DROP TABLE IF EXISTS kleuren;
 CREATE TABLE kleuren(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   kleur TEXT
+ 
 );
 
-DROP TABLE IF EXISTS kleuren; 
-CREATE TABLE kleuren(
-  schoen_id INTEGER PRIMARY KEY AUTOINCREMENT,
+DROP TABLE IF EXISTS kleurenshoen; 
+CREATE TABLE kleurenschoen(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  schoen_id INTEGER,
   kleur_id INTEGER
 );
 --
@@ -94,23 +96,42 @@ insert into merk (name) values ('tommy hilfiger');
 insert into merk (name) values ('puma');
 insert into merk (name) values ('adidas');
 
-/*
-insert into kleuren (kleur) values ('Wit');
-insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Rood');
-insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Bruin');
 insert into kleuren (kleur) values ('Zwart');
-insert into kleuren (kleur) values ('Zwart');
+insert into kleuren (kleur) values ('Groen');
+insert into kleuren (kleur) values ('Grijs');
+insert into kleuren (kleur) values ('Goud');
 
-insert into kleuren (kleur) values ('1');
-insert into kleuren (kleur) values ('1');
-insert into kleuren (kleur) values ('1');
-insert into kleuren (kleur) values ('2');
-insert into kleuren (kleur) values ('1');
-insert into kleuren (kleur) values ('3');
-insert into kleuren (kleur) values ('4');
-insert into kleuren (kleur) values ('4');
+insert into kleurenshoen (schoen_id, kleur_id) values (1, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (1, 5;
 
-*/
+insert into kleurenshoen (schoen_id, kleur_id) values (2, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (2, 2);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (3, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (3, 5);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (4, 1);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (5, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (5, 2);
+insert into kleurenshoen (schoen_id, kleur_id) values (5, 4);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (6, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (6, 7);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (7, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (7, 6);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (8, 3);
+insert into kleurenshoen (schoen_id, kleur_id) values (8, 4);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (9, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (9, 2);
+insert into kleurenshoen (schoen_id, kleur_id) values (9, 4);
+
+insert into kleurenshoen (schoen_id, kleur_id) values (10, 1);
+insert into kleurenshoen (schoen_id, kleur_id) values (10, 4);
+
