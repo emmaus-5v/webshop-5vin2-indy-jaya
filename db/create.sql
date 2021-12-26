@@ -84,9 +84,9 @@ insert into reviews (review) values ('Een leuke unieke schoen die je in veel kle
 insert into reviews (review) values ('Ze zijn natuurlijk super makkelijk te combineren (ze passen op jurkjes na echt bij alles) maar ook lopen ze enorm fijn.');
 insert into reviews (review) values ('9 maanden geleden lederen Timberland wandelschoenen gekocht waarvan beide zolen volledig doorgesleten zijn.');
 insert into reviews (review) values ('Heb 3 paar tommys gehad in mijn leven gehad en elke keer kwaliteit om van te huilen.');
-insert into reviews (review) values ('Mooi en passen precies. Staat goed bij alle kleding. De schoenen zitten perfect en zijn heel mooi! Sportief en comfortabel.');
+insert into reviews (review) values ('Ze zitten perfect en zijn mooi! Sportief en comfortabel.');
 insert into reviews (review) values ('Erg fijne en comfortabele schoenen die lang mee gaan.');
-insert into reviews (review) values ('De forums zijn hele goede schoenen die lekker zitten en bij elke outfit passen.');
+insert into reviews (review) values ('Schoenen zitten lekker en passen bij elke outfit.');
 
 insert into merk (name) values ('Nike specials');
 insert into merk (name) values ('Nike');
