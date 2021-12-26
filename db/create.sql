@@ -9,7 +9,8 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2),
-  merk_id INTEGER
+  merk_id INTEGER,
+  ratings_id INTEGER
 );
 
 DROP TABLE IF EXISTS merk;
@@ -37,7 +38,7 @@ CREATE TABLE kleuren(
  
 );
 
-DROP TABLE IF EXISTS kleurenshoen; 
+DROP TABLE IF EXISTS kleurenschoen; 
 CREATE TABLE kleurenschoen(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   schoen_id INTEGER,
@@ -52,16 +53,16 @@ CREATE TABLE kleurenschoen(
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (name, description, code, price, merk_id) values ('Nike air force 1', 'Nike air force 1 zijn een van de populairste schoenen van de afgelopen jaren. Ze zijn een goede basic die bij elke outfit past.', '816905633-0', 100.00, 1);
-insert into products (name, description, code, price, merk_id) values ('Nike jordans 1', 'Deze collectie van Nike is gemaakt met Micheal Jorden, een van de bekendste basketballers ter wereld.', '077030122-3', 120.00, 2);
-insert into products (name, description, code, price, merk_id) values ('New Balance 550', 'Deze New Balance schoenen werden voor het eerst uitgebracht in 1989, maar heb een nu een kompleet nieuwe look gekregen.', '445924201-X', 220.00, 3);
-insert into products (name, description, code, price, merk_id) values ('Converse: All Stars', 'De All Starts bestaan al lang, het is een basic en veel gedragen omdat het bij elke outfit past.', '693155505-7', 90.00, 4);
-insert into products (name, description, code, price, merk_id) values ('Nubikk', 'Deze Nubikks zijn mooie en simpele schoenen.', '686928463-6', 250.00, 5);
-insert into products (name, description, code, price, merk_id) values ('Timberlands', 'Timberlands zitten heel lekker en zijn perfect voor de wintermaanden.', '492662523-7', 150.00, 6);
-insert into products (name, description, code, price, merk_id) values ('Vans', 'Vans staan bekend als skate schoenen maar je kan ze ook makkelijk voor dagelijk gebruik gebruiken.', '392672673-2', 100.00, 7);
-insert into products (name, description, code, price, merk_id) values ('Tommy Hilfiger', 'Tommy Hilfiger staat bekend om hun kleding maar ze verkopen ook goede en mooie schoenen', '970352673-6', 200.00, 8);
-insert into products (name, description, code, price, merk_id) values ('Puma', 'Deze puma schoenen zijn erg comfortabel en hebben een retrolook.', '640352233-8', 100.00, 9);
-insert into products (name, description, code, price, merk_id) values ('Adidas Forum', 'Deze schoenen zijn weer helemaal in een zijn een oud model met een nieuwe look.', '910367233-3', 120.00, 10);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Nike air force 1', 'Nike air force 1 zijn een van de populairste schoenen van de afgelopen jaren. Ze zijn een goede basic die bij elke outfit past.', '816905633-0', 100.00, 1, 1);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Nike jordans 1', 'Deze collectie van Nike is gemaakt met Micheal Jorden, een van de bekendste basketballers ter wereld.', '077030122-3', 120.00, 2, 2);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('New Balance 550', 'Deze New Balance schoenen werden voor het eerst uitgebracht in 1989, maar heb een nu een kompleet nieuwe look gekregen.', '445924201-X', 220.00, 3, 3);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Converse: All Stars', 'De All Starts bestaan al lang, het is een basic en veel gedragen omdat het bij elke outfit past.', '693155505-7', 90.00, 4, 4);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Nubikk', 'Deze Nubikks zijn mooie en simpele schoenen.', '686928463-6', 250.00, 5, 5);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Timberlands', 'Timberlands zitten heel lekker en zijn perfect voor de wintermaanden.', '492662523-7', 150.00, 6, 6);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Vans', 'Vans staan bekend als skate schoenen maar je kan ze ook makkelijk voor dagelijk gebruik gebruiken.', '392672673-2', 100.00, 7, 7);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Tommy Hilfiger', 'Tommy Hilfiger staat bekend om hun kleding maar ze verkopen ook goede en mooie schoenen', '970352673-6', 200.00, 8, 8);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Puma', 'Deze puma schoenen zijn erg comfortabel en hebben een retrolook.', '640352233-8', 100.00, 9, 9);
+insert into products (name, description, code, price, merk_id, ratings_id) values ('Adidas Forum', 'Deze schoenen zijn weer helemaal in een zijn een oud model met een nieuwe look.', '910367233-3', 120.00, 10, 10);
 
 insert into ratings (rating) values ('4,0'); 
 insert into ratings (rating) values ('4,2');
@@ -104,34 +105,34 @@ insert into kleuren (kleur) values ('Groen');
 insert into kleuren (kleur) values ('Grijs');
 insert into kleuren (kleur) values ('Goud');
 
-insert into kleurenshoen (schoen_id, kleur_id) values (1, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (1, 5;
+insert into kleurenschoen (schoen_id, kleur_id) values (1, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (1, 5);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (2, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (2, 2);
+insert into kleurenschoen (schoen_id, kleur_id) values (2, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (2, 2);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (3, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (3, 5);
+insert into kleurenschoen (schoen_id, kleur_id) values (3, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (3, 5);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (4, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (4, 1);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (5, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (5, 2);
-insert into kleurenshoen (schoen_id, kleur_id) values (5, 4);
+insert into kleurenschoen (schoen_id, kleur_id) values (5, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (5, 2);
+insert into kleurenschoen (schoen_id, kleur_id) values (5, 4);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (6, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (6, 7);
+insert into kleurenschoen (schoen_id, kleur_id) values (6, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (6, 7);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (7, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (7, 6);
+insert into kleurenschoen (schoen_id, kleur_id) values (7, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (7, 6);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (8, 3);
-insert into kleurenshoen (schoen_id, kleur_id) values (8, 4);
+insert into kleurenschoen (schoen_id, kleur_id) values (8, 3);
+insert into kleurenschoen (schoen_id, kleur_id) values (8, 4);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (9, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (9, 2);
-insert into kleurenshoen (schoen_id, kleur_id) values (9, 4);
+insert into kleurenschoen (schoen_id, kleur_id) values (9, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (9, 2);
+insert into kleurenschoen (schoen_id, kleur_id) values (9, 4);
 
-insert into kleurenshoen (schoen_id, kleur_id) values (10, 1);
-insert into kleurenshoen (schoen_id, kleur_id) values (10, 4);
+insert into kleurenschoen (schoen_id, kleur_id) values (10, 1);
+insert into kleurenschoen (schoen_id, kleur_id) values (10, 4);
 
