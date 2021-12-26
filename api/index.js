@@ -70,7 +70,7 @@ function getProducts(request, response) {
   const category_id = parseInt(request.query.category)
   let data = []
   if (category_id > 0) {
-    const sqlOpdracht = db.prepare('SELECT * FROM products WHERE category_id = ? ORDER BY name ASC')
+    const sqlOpdracht = db.prepare('SELECT * FROM products JOIN merk ON merk.id = products.merk_id WHERE category_id = ? ORDER BY name ASC')
     data = sqlOpdracht.all(category_id)
   } else {
     const sqlOpdracht = db.prepare('SELECT products.id AS id, products.code AS code, products.price AS price, products.description AS description, products.name AS name, merk.id As merk_id2, merk.name As merk_name FROM products JOIN merk ON merk.id = products.merk_id ORDER BY name ASC')
@@ -86,7 +86,7 @@ function getProductById(request, response) {
 
   let data = []
   const product_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT * FROM products WHERE id = ?')
+  const sqlOpdracht = db.prepare('SELECT * FROM products JOIN review ON review_id = products_id JOIN merk ON merk_id = products_id WHERE id = ?')
   data = sqlOpdracht.all(product_id)
   response.status(200).json(data[0])
 }

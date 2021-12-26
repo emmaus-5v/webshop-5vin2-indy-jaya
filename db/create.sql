@@ -94,6 +94,7 @@ insert into merk (name) values ('tommy hilfiger');
 insert into merk (name) values ('puma');
 insert into merk (name) values ('adidas');
 
+/*
 insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Wit');
@@ -111,3 +112,5 @@ insert into kleuren (kleur) values ('1');
 insert into kleuren (kleur) values ('3');
 insert into kleuren (kleur) values ('4');
 insert into kleuren (kleur) values ('4');
+
+*/
