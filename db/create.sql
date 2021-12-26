@@ -27,8 +27,8 @@ CREATE TABLE ratings (
   rating NUMERIC(10, 1)
 );
 
-DROP TABLE IF EXISTS reviews; 
-CREATE TABLE reviews (
+DROP TABLE IF EXISTS review; 
+CREATE TABLE review (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   review TEXT
 );
@@ -77,16 +77,16 @@ insert into ratings (rating) values (4.1);
 insert into ratings (rating) values (3.2);
 insert into ratings (rating) values (4.4);
 
-insert into reviews (review) values ('Helemaal top! De prijs is wel wat duur, maar ik heb ze eerder gehad en ze gingen uiteindelijk 4 jaar mee.');
-insert into reviews (review) values ('Een tijdloze, comfortabele schoen waar je dol op bent voor je voeten.');
-insert into reviews (review) values ('Mooie schoen, zit zeer gemakkelijk');
-insert into reviews (review) values ('Een leuke unieke schoen die je in veel kleuren kan vinden, en gaat lang mee');
-insert into reviews (review) values ('Ze zijn natuurlijk super makkelijk te combineren (ze passen op jurkjes na echt bij alles) maar ook lopen ze enorm fijn.');
-insert into reviews (review) values ('9 maanden geleden lederen Timberland wandelschoenen gekocht waarvan beide zolen volledig doorgesleten zijn.');
-insert into reviews (review) values ('Heb 3 paar tommys gehad in mijn leven gehad en elke keer kwaliteit om van te huilen.');
-insert into reviews (review) values ('Ze zitten perfect en zijn mooi! Sportief en comfortabel.');
-insert into reviews (review) values ('Erg fijne en comfortabele schoenen die lang mee gaan.');
-insert into reviews (review) values ('Schoenen zitten lekker en passen bij elke outfit.');
+insert into review (review) values ('Helemaal top! De prijs is wel wat duur, maar ze gaan lang mee');
+insert into review (review) values ('Een tijdloze, comfortabele schoen.');
+insert into review (review) values ('Mooie schoen, zit zeer gemakkelijk');
+insert into review (review) values ('Een leuke unieke schoen die je in veel kleuren kan vinden');
+insert into review (review) values ('Makkelijk te combineren en lopen fijn.');
+insert into review (review) values ('Schoenen waren snel versleten, niet waard voor de prijs');
+insert into review (review) values ('Hele slechte kwaliteit.');
+insert into review (review) values ('Ze zitten perfect en zijn mooi! Sportief en comfortabel.');
+insert into review (review) values ('Erg fijne en comfortabele schoenen die lang mee gaan.');
+insert into review (review) values ('Schoenen zitten lekker en passen bij elke outfit.');
 
 insert into merk (name) values ('Nike specials');
 insert into merk (name) values ('Nike');
