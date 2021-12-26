@@ -1,6 +1,6 @@
 /* all pages */
 body{
-  background-color: rgb(245, 236, 220);
+  background:-webkit-repeating-linear-gradient(84deg, #ece9e4 20%, #a19075 80%);
 }
 footer {
   margin: 20px;
@@ -26,7 +26,7 @@ footer {
 
 .card {
   width:200px; 
-  height: 700px; 
+  height: 850px; 
   margin-bottom: 20px
 }
 
