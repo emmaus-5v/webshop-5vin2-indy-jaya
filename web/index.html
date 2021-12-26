@@ -128,8 +128,8 @@
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
 			  clone.querySelector(".product_merk").textContent = product.merk_name
-			  clone.querySelector(".product_ratings").textContent = product.ratings_rating
-			  clone.querySelector(".product_reviews").textContent = product.reviews_review
+			  clone.querySelector(".product_ratings").textContent = product.rating
+			  clone.querySelector(".product_reviews").textContent = product.review
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
