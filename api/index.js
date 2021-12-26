@@ -81,6 +81,7 @@ function getProducts(request, response) {
   console.log('API verstuurt /api/products/')
 }
 
+
 function getProductById(request, response) {
   console.log('API ontvangt /api/products/:id/?', request.query)
 
