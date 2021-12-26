@@ -24,7 +24,7 @@ CREATE TABLE merk(
 DROP TABLE IF EXISTS ratings; 
 CREATE TABLE ratings (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  rating VARCHAR(10)
+  rating NUMERIC(10, 1)
 );
 
 DROP TABLE IF EXISTS reviews; 
@@ -66,16 +66,16 @@ insert into products (name, description, code, price, merk_id, ratings_id, revie
 insert into products (name, description, code, price, merk_id, ratings_id, review_id, kleurenschoen_id) values ('Puma', 'Deze puma schoenen zijn erg comfortabel en hebben een retrolook.', '640352233-8', 100.00, 9, 9, 9, 9);
 insert into products (name, description, code, price, merk_id, ratings_id, review_id, kleurenschoen_id) values ('Adidas Forum', 'Deze schoenen zijn weer helemaal in een zijn een oud model met een nieuwe look.', '910367233-3', 120.00, 10, 10, 10, 10);
 
-insert into ratings (rating) values ('4,0'); 
-insert into ratings (rating) values ('4,2');
-insert into ratings (rating) values ('4,9');
-insert into ratings (rating) values ('4,7');
-insert into ratings (rating) values ('4,1');
-insert into ratings (rating) values ('3,5');
-insert into ratings (rating) values ('3,4');
-insert into ratings (rating) values ('4,1');
-insert into ratings (rating) values ('3,2');
-insert into ratings (rating) values ('4,4');
+insert into ratings (rating) values (4.0); 
+insert into ratings (rating) values (4.2);
+insert into ratings (rating) values (4.9);
+insert into ratings (rating) values (4.7);
+insert into ratings (rating) values (4.1);
+insert into ratings (rating) values (3.5);
+insert into ratings (rating) values (3.4);
+insert into ratings (rating) values (4.1);
+insert into ratings (rating) values (3.2);
+insert into ratings (rating) values (4.4);
 
 insert into reviews (review) values ('Helemaal top! De prijs is wel wat duur, maar ik heb ze eerder gehad en ze gingen uiteindelijk 4 jaar mee.');
 insert into reviews (review) values ('Een tijdloze, comfortabele schoen waar je dol op bent voor je voeten.');
@@ -88,16 +88,16 @@ insert into reviews (review) values ('Mooi en passen precies. Staat goed bij all
 insert into reviews (review) values ('Erg fijne en comfortabele schoenen die lang mee gaan.');
 insert into reviews (review) values ('De forums zijn hele goede schoenen die lekker zitten en bij elke outfit passen.');
 
-insert into merk (name) values ('nike specials');
-insert into merk (name) values ('nike');
-insert into merk (name) values ('new balance');
-insert into merk (name) values ('converse');
-insert into merk (name) values ('nubikk');
-insert into merk (name) values ('timberlands');
-insert into merk (name) values ('vans');
-insert into merk (name) values ('tommy hilfiger');
-insert into merk (name) values ('puma');
-insert into merk (name) values ('adidas');
+insert into merk (name) values ('Nike specials');
+insert into merk (name) values ('Nike');
+insert into merk (name) values ('New balance');
+insert into merk (name) values ('Converse');
+insert into merk (name) values ('Nubikk');
+insert into merk (name) values ('Timberlands');
+insert into merk (name) values ('Vans');
+insert into merk (name) values ('Tommy Hilfiger');
+insert into merk (name) values ('Puma');
+insert into merk (name) values ('Adidas');
 
 insert into kleuren (kleur) values ('Wit');
 insert into kleuren (kleur) values ('Rood');
